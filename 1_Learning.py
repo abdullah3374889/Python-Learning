@@ -201,3 +201,6 @@ for i in range(a, 1, -1):
 print("hello world")
 
 print ("Alpha beta gamaam")
+
+for x in range(10):
+    print(x)
