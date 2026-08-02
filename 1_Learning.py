@@ -197,3 +197,4 @@ for i in range(a):
     print(f'{"x"*(i+1)}{"  "*(a-i-1)}{"x"*(i+1)}')
 for i in range(a, 1, -1):
     print(f'{"x"*(i-1)}{"  "*(a-i+1)}{"x"*(i-1)}')
+
