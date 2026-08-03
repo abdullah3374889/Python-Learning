@@ -311,6 +311,23 @@
 
 
 
-f = open("sample.txt", "r")
-data = f.read()
-print(data)
+# f = open("sample.txt", "r")
+# data = f.read(7)        #read first 7 characters
+# print(data)
+# f.close()
+
+# f = open("sample2.txt", "r+")
+# f.write("This is a new file created using Python.")
+# f.close()
+
+
+# f = open("sample2.txt", "r")
+# data = f.readline()        #read first line
+# print(data)
+# f.close()  
+
+f = open("sample2.txt", "r")
+print(f.readline())        #read first line
+print(f.readline())        #read second line
+print(f.readline())        #read third line
+f.close()
