@@ -147,7 +147,7 @@
 #STARS
 #left pyramid
 
-a=int(input("Enter the number: "))
+# a=int(input("Enter the number: "))
 # for i in range(a+1):
 #     for j in range(i):
 #         print("*", end="")
@@ -193,17 +193,124 @@ a=int(input("Enter the number: "))
 #     else:
 #         print(f'{"*"*((a*2)-(i+1))}{"  "*(i-a+1)}{"*"*((a*2)-(i+1))}')
 #or we can divide upper and lower parts
-for i in range(a):
-    print(f'{"x"*(i+1)}{"  "*(a-i-1)}{"x"*(i+1)}')
-for i in range(a, 1, -1):
-    print(f'{"x"*(i-1)}{"  "*(a-i+1)}{"x"*(i-1)}')
+# for i in range(a):
+#     print(f'{"x"*(i+1)}{"  "*(a-i-1)}{"x"*(i+1)}')
+# for i in range(a, 1, -1):
+#     print(f'{"x"*(i-1)}{"  "*(a-i+1)}{"x"*(i-1)}')
 
-print("hello world")
+# def func1(a):
+#     print(f"Hello {a}")
 
-print ("Alpha beta gamaam")
-for y in range(100):
-    print(y)
+# func1("Alice")
+# func1("Bob")
+# func1("Charlie")
+
+# create a funcition that calcualte the factorial of a number
+
+# def factorial(n):
+#     if n < 0:
+#         return "Factorial is not defined for negative numbers."
+#     elif n == 0 or n == 1:
+#         return 1
+#     else:
+#         result = 1
+#         for i in range (2, n + 1):
+#             result *= i
+#         return result
+
+# a = int(input("Enter a number to calculate its factorial: "))
+# print(f"Factorial of {a} is {factorial(a)}.")
 
 
-for x in range(10013):
-    print(x)
+# Create a function that counts the vowels in a string.
+# def count_vowels(s):
+#     vowels = "aeiouAEIOU"
+#     count = 0
+#     for char in s:
+#         if char in vowels:
+#             count += 1
+#     return count
+
+#student record system using class
+
+
+# class Student:
+#     def __init__(self, name, age, roll_number):
+#         self.name = name
+#         self.age = age
+#         self.roll_number = roll_number
+
+#     def display_info(self):
+#         return f"Name: {self.name}, Age: {self.age}, Roll Number: {self.roll_number}"
+
+
+# s1 = Student("Alice", 20, "A001")
+# s2 = Student("Bob", 21, "A002")
+# s3 = Student("Charlie", 19, "A003")
+
+
+# print(s1.display_info())
+# print(s1.age)
+
+
+# class Student:
+#     def __init__(self, name, m1, m2, m3):
+#         self.name = name
+#         self.m1 = m1
+#         self.m2 = m2
+#         self.m3 = m3
+
+#     def average(self):
+#         return (self.m1 + self.m2 + self.m3) / 3
+
+# s1 = Student("Alice", 85, 90, 78)
+# print(f"{s1.name}'s average marks: {s1.average():.4f}")
+
+
+
+
+# class Student:
+#     @staticmethod
+#     def hello():
+#         print("Hello from the Student class!")
+
+#     def welcome(self):
+#         print("Welcome to the Student Record System!")
+
+# s1 = Student()
+# s1.welcome()
+
+# s1.hello()
+# Student.hello()  # Calling the static method directly from the class
+
+
+
+
+
+# Inheritance
+# class Car:
+#     def __init__(self, make, model, year):
+#         self.make = make
+#         self.model = model
+#         self.year = year
+
+#     def display_info(self):
+#         return f"Car: {self.year} {self.make} {self.model}"
+
+# class Toyota(Car):
+#     def __init__(self, name):
+#         print("Toyota class constructor called with name: ", name)
+
+# c1 = Toyota("Corolla")
+# c1.make = "Toyota"
+# c1.model = "Corolla"
+# c1.year = 2020
+# print(c1.display_info())
+
+
+
+
+
+f = open("sample.txt", "r")
+data = f.read()
+print(data)
